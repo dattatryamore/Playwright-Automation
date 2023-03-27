@@ -3,11 +3,7 @@ executors:
   my-custom-executor:
     docker:
       - image: mcr.microsoft.com/playwright:v1.32.0-focal
-        auth:
-          # ensure you have first added these secrets
-          # visit app.circleci.com/settings/project/github/dattatryamore/Playwright-Automation/environment-variables
-          username: $DOCKER_HUB_USER
-          password: $DOCKER_HUB_PASSWORD
+    
 jobs:
   sanity:
 
