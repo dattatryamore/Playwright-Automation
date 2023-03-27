@@ -1,0 +1,18 @@
+version: 2.1
+executors:
+  my-custom-executor:
+    docker:
+      - image: mcr.microsoft.com/playwright:v1.25.1-focal
+    
+jobs:
+  sanity:
+
+    executor: my-custom-executor
+    steps:
+      - checkout
+      - run: |
+          npx playwright test
+workflows:
+  my-custom-workflow:
+    jobs:
+      - sanity
