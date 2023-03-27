@@ -11,6 +11,7 @@ jobs:
     steps:
       - checkout
       - run: |
+          npm install -D @playwright/test
           npx playwright test
 workflows:
   my-custom-workflow:
