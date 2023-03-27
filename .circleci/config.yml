@@ -2,7 +2,7 @@ version: 2.1
 executors:
   my-custom-executor:
     docker:
-      - image: mcr.microsoft.com/playwright:v1.32.0-focal
+      - image: mcr.microsoft.com/playwright:v1.32.1-focal
     
 jobs:
   sanity:
