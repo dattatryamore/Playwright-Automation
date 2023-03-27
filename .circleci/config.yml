@@ -15,7 +15,7 @@ jobs:
           npx playwright test
           
       - store_artifacts:
-          path: /playwright-report/
+          path: playwright-report/
           destination: artifact-file
           
 workflows:
